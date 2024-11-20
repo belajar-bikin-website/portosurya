@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: -apple-system, sans-serif;
+}
+
+:root {
+    --bg-color: #0d0d0d; /* Darker background */
+    --second-bg-color: #1a1a1a; /* Slightly lighter background */
+    --text-color: #e0e0e0; /* Lighter text color */
+    --main-color: #00ffcc; /* Teal color */
+}
+
+html {
+    font-size: 62.5%; /* Base font size */
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem; /* Default padding */
+}
+
+/* Header Section Code */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#00ffcc, #ffcc00);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: transform 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease; /* Font transition */
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    font-size: 3.2rem; /* Increase size on hover */
+    font-weight: 900; /* Increase weight on hover */
+}
+
+.navbar {
+    display: flex;
+    transition: max-height 0.3s ease; /* Smooth transition for navbar height */
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease, font-size 0.3s ease; /* Font transition */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    font-size: 2rem; /* Increase size on hover */
+    font-weight: 600; /* Increase weight on hover */
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    transition: transform 0.3s ease; /* Add transition for menu icon */
+}
+
+#menu-icon:hover {
+    transform: rotate(90deg); /* Rotate effect on hover */
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.3s ease, font-size 0.3s ease; /* Button transition */
+}
+
+.nav-btn:hover {
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 20px var(--main-color);
+    transform: scale(1.05);
+    font-size: 1.8rem; /* Increase size on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    html {
+        font-size: 56.25%; /* Adjust base font size for smaller screens */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 5%; /* Adjust padding */
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Hide navbar by default */
+        max-height: 0; /* Initial max-height for transition */
+        overflow: hidden; /* Hide overflow */
+    }
+
+    .navbar.active {
+        display:
