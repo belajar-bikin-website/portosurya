@@ -1,0 +1,184 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e0f7fa; /* Light aqua background */
+    color: #004d40; /* Dark teal text */
+}
+
+/* Header Styles */
+header {
+    background: #00796b; /* Dark teal */
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #b2ebf2; /* Light aqua on hover */
+    transform: scale(1.1);
+}
+
+.top-btn .nav-btn {
+    background: #b2ebf2; /* Light aqua */
+    color: #004d40; /* Dark teal */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.top-btn .nav-btn:hover {
+    background: #80deea; /* Slightly darker aqua on hover */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    padding: 50px 100px;
+    background: #ffffff; /* White background */
+}
+
+.home-content {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: #00796b; /* Dark teal */
+}
+
+.home-content h3 span {
+    color: #004d40; /* Dark teal */
+}
+
+.home-content p {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin-right: 15px;
+    color: #00796b; /* Dark teal */
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #b2ebf2; /* Light aqua on hover */
+}
+
+.btn {
+    background: #00796b; /* Dark teal */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #004d40; /* Darker teal on hover */
+}
+
+/* Profile Image */
+.home-img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transition: transform 0.3s;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    padding: 50px 100px;
+    background: #e0f7fa; /* Light aqua */
+}
+
+.portfolio .heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #00796b; /* Dark teal */
+}
+
+.portfolio .heading span {
+    color: #004d40; /* Darker teal */
+}
+
+.portfolio-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row {
+    background: white; /* White background for each portfolio item */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    width: calc(25% - 20px); /* 4 items per row */
+    transition: transform 0.3s;
+}
+
+.row:hover {
+    transform: translateY(-10px);
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #00796b; /* Dark teal border */
+}
+
+.main-row {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-text h1,
+.row-text h2,
+.row-text h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #333; /* Dark
